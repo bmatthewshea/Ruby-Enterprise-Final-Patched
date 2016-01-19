@@ -27,7 +27,6 @@ if you experince segfaults try:
 ```
 CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install ./ree-1.8.7-2012.02-custom
 ```
-```
 Note: I have reproduced this install method/build. If you feel there is an error, just let me know..
 
 ----
