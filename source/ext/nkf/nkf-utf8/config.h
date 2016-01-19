@@ -1,4 +1,4 @@
-/*#ifndef _CONFIG_H_ */
+#ifndef _CONFIG_H_
 #define _CONFIG_H_
 
 /* UTF8 入出力 */
