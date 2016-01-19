@@ -5,6 +5,7 @@ A depo that actually has all original files in place and is patched twice:
 * tcmalloc.cc - https://code.google.com/p/rubyenterpriseedition/issues/detail?id=74
 * openssl - removed if/endif
 
+----
 Idea for this is from:
 
 https://github.com/bacrossland/ruby_enterprise
@@ -18,7 +19,6 @@ Files that were missing from above - that are available here in this repo (using
         source/vms/config.h
 
 (Seems to have commited/pushed with .cvsignore intact? or this seems to be the reason for missing files)
-
 ----
 
 ###Use in ruby-build/rbenv:
