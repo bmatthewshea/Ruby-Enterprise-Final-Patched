@@ -1,6 +1,6 @@
 ##Ruby Enterprise Edition (REE) Final/Patched - 1.8.7-2012.02
 
-A depo that actually has all original files in place and is patched twice:
+A depo for the last version of REE that is also patched twice:
 
 * tcmalloc.cc - https://code.google.com/p/rubyenterpriseedition/issues/detail?id=74
 * openssl - removed if/endif
