@@ -3,8 +3,10 @@ Ruby Enterprise Edition (REE) Final/Patched - 1.8.7-2012.02
 A depo that actually has all original files in place and is patched twice:
 
  1: tcmalloc.cc - https://code.google.com/p/rubyenterpriseedition/issues/detail?id=74
- 2: openssl - removed if/endif (per:)
 
+ 2: openssl - removed if/endif
+
+Idea for this is from:
 https://github.com/bacrossland/ruby_enterprise
 (He also commited/pushed with .cvsignore intact. So it has missing files in repo - or this seems to be the reason)
 
