@@ -19,8 +19,7 @@ Files that were missing from above - that are available here in this repo (using
         source/parse.c
         source/vms/config.h
 
-**To use this create your own definition file:**
-
+**To use this create your own definition file for use in ruby-build/rbenv:**
 ```
 require_gcc
 install_package "Ruby-Enterprise-Final-Patched" "https://github.com/bmatthewshea/Ruby-Enterprise-Final-Patched/archive/master.tar.gz" ree_installer
