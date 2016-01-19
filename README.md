@@ -32,15 +32,14 @@ CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install ./ree-1.8.7
 
 Note: I have reproduced this install method/build. If you feel there is an error, just let me know..
 
-
-
-
 ----
 
-I created this because after trying to use the follwing depo, I was missing files.
+###Reason
 
 https://github.com/bacrossland/ruby_enterprise
 
+I created this because after trying to use the that, I was missing files.
+I needed quick way to clone source out for migration.
 Files that were missing from above - that are available here in this repo (using original REE source):
 
         source/configure
