@@ -19,8 +19,18 @@ Files that were missing from above - that are available here in this repo (using
         source/parse.c
         source/vms/config.h
 
-**To use this create your own definition file for use in ruby-build/rbenv:**
+**To use this, clone and rename depo then create a definition file for use in ruby-build/rbenv:**
+```
+git clone https://github.com/bmatthewshea/Ruby-Enterprise-Final-Patched.git
+mv Ruby-Enterprise-Final-Patched/ ruby-enterprise-1.8.7-2012.02-custom/
+tar czf ruby-enterprise-1.8.7-2012.02-custom.tar.gz ruby-enterprise-1.8.7-2012.02-custom/
+```
+Sample definition file 'ree-1.8.7-2012.02-custom':
 ```
 require_gcc
-install_package "Ruby-Enterprise-Final-Patched" "https://github.com/bmatthewshea/Ruby-Enterprise-Final-Patched/archive/master.tar.gz" ree_installer
+install_package "ruby-enterprise-1.8.7-2012.02-custom" "file:///home/USERNAME/downloads/ruby-enterprise-1.8.7-2012.02-custom.tar.gz" ree_installer
+```
+Run ruby-build via rbenv as example:
+```
+rbenv install ./ree-1.8.7-2012.02-custom
 ```
