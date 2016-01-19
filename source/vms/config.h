@@ -1,4 +1,4 @@
-/* config.h for OpenVMS */
+/* config.h for OpenVMS */ 
 
 #ifndef VMS_RUBY_STREAM
 #define VMS_RUBY_STREAM "018"
