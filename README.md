@@ -7,22 +7,6 @@ A depo for the last version of REE that is also patched twice:
 
 ----
 
-I created this because after trying to use the follwing depo, I was missing files.
-
-https://github.com/bacrossland/ruby_enterprise
-
-Files that were missing from above - that are available here in this repo (using original REE source):
-
-        source/configure
-        source/ext/nkf/nkf-utf8/config.h
-        source/lex.c
-        source/parse.c
-        source/vms/config.h
-
-(Seems to have commited/pushed with .cvsignore intact? or this seems to be the reason for missing files)
-
-----
-
 ###Use in ruby-build/rbenv:
 Clone and rename depo then create a definition file for use in ruby-build/rbenv:
 ```
@@ -44,6 +28,22 @@ if you experince segfaults try:
 CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install ./ree-1.8.7-2012.02-custom
 ```
 ```
-Note:
+Note: I have reproduced this install method/build. If you feel there is an error, just let me know..
 
-I have reproduced this install method/build. If you feel there is an error, just let me know..
+----
+
+I created this because after trying to use the follwing depo, I was missing files.
+
+https://github.com/bacrossland/ruby_enterprise
+
+Files that were missing from above - that are available here in this repo (using original REE source):
+
+        source/configure
+        source/ext/nkf/nkf-utf8/config.h
+        source/lex.c
+        source/parse.c
+        source/vms/config.h
+
+(Seems to have commited/pushed with .cvsignore intact? or this seems to be the reason for missing files)
+
+----
