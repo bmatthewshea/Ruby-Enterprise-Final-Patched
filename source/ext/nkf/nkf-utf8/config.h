@@ -1,7 +1,7 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
-/* UTF8 入出力 */
+/* UTF8 入出力 */ 
 #define UTF8_INPUT_ENABLE
 #define UTF8_OUTPUT_ENABLE
 
