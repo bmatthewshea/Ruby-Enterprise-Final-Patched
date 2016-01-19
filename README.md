@@ -9,8 +9,6 @@ Idea for this is from:
 
 https://github.com/bacrossland/ruby_enterprise
 
-(He also commited/pushed with .cvsignore intact. So it has missing files in repo - or this seems to be the reason)
-
 Files that were missing from above - that are available here in this repo (using original REE source):
 
         source/configure
@@ -18,6 +16,8 @@ Files that were missing from above - that are available here in this repo (using
         source/lex.c
         source/parse.c
         source/vms/config.h
+
+(Seems to have commited/pushed with .cvsignore intact? or this seems to be the reason for missing files)
 
 ----
 
@@ -37,3 +37,6 @@ Run ruby-build via rbenv as example:
 ```
 rbenv install ./ree-1.8.7-2012.02-custom
 ```
+Note:
+
+I have reproduced this install method/build. It works. If you feel there is an error, just let me know..
