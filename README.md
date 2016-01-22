@@ -14,7 +14,11 @@ git clone https://github.com/bmatthewshea/Ruby-Enterprise-Final-Patched.git
 mv Ruby-Enterprise-Final-Patched/ ruby-enterprise-1.8.7-2012.02-custom/
 tar czf ruby-enterprise-1.8.7-2012.02-custom.tar.gz ruby-enterprise-1.8.7-2012.02-custom/
 ```
-Sample definition file 'ree-1.8.7-2012.02-custom':
+Sample definition file - edit 'ree-1.8.7-2012.02-custom':
+```
+nano ree-1.8.7-2012.02-custom
+```
+Add (change file path):
 ```
 require_gcc
 install_package "ruby-enterprise-1.8.7-2012.02-custom" "file:///home/USERNAME/downloads/ruby-enterprise-1.8.7-2012.02-custom.tar.gz" ree_installer
@@ -23,9 +27,9 @@ Run ruby-build via rbenv as example:
 ```
 rbenv install ./ree-1.8.7-2012.02-custom
 ```
-if you experince segfaults try:
+NOTE: I got segfaults Ruby binary (built on Ubuntu 14.04/x64) - use this instead:
 ```
-CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install ./ree-1.8.7-2012.02-custom
+CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install -v ./ree-1.8.7-2012.02-custom
 ```
 
 
@@ -34,12 +38,12 @@ Note: I have reproduced this install method/build. If you feel there is an error
 
 ----
 
-###Reason
+###Notes/Reason for this depo
 
 https://github.com/bacrossland/ruby_enterprise
 
 I created this because after trying to use the that, I was missing files.
-I needed quick way to clone source out for migration.
+I needed quick way to clone source out for numerous migrations of Ruby code.
 Files that were missing from above - that are available here in this repo (using original REE source):
 
         source/configure
