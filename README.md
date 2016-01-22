@@ -27,13 +27,10 @@ Run ruby-build via rbenv as example:
 ```
 rbenv install ./ree-1.8.7-2012.02-custom
 ```
-NOTE: I got segfaults Ruby binary (built on Ubuntu 14.04/x64) - use this instead:
+NOTE: Segfaulted while running Ruby binary (built on Ubuntu 14.04/x64) - I used this instead:
 ```
 CFLAGS="-O2 -fno-tree-dce -fno-optimize-sibling-calls" rbenv install -v ./ree-1.8.7-2012.02-custom
 ```
-
-
-
 Note: I have reproduced this install method/build. If you feel there is an error, just let me know..
 
 ----
